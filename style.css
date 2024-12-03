@@ -47,11 +47,12 @@ body{
 }
 
 .featured-products{
-    padding: 50px;
+    padding: 20px;
     text-align: center;
 }
 
 .product-list{
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
