@@ -7,12 +7,20 @@ body {
     font-family: 'Segoe UI';
 }
 
+.highlight {
+    color: rgb(148, 63, 63);
+    font-weight: bold;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: bisque;
+    position: sticky;
+    right: 0;
+    top: 0;
 }
 
 .nav-links {
@@ -32,12 +40,13 @@ body {
 }
 
 .hero {
-    background-image: url(https://media.admagazine.com/photos/618a635c5e45a526c6be8c7a/master/pass/76739.jpg);
+    background-image: url(https://wallpaperaccess.com/full/2632497.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding: 100px;
+    text-shadow: 2px 2px 7px black;
 }
 
 .hero-content {
@@ -58,13 +67,20 @@ body {
 .boton-menu {
     margin: 15px;
     padding: 5px;
-    background-color: aliceblue;
-    color: black;
+    background-color: #0a0a23;
+    color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+}
 
+.boton-menu:hover {
+    outline-color: invert;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px black;
 }
 
 .featured-products,
-.postres,
+.alimentos,
 .equipo {
     padding: 20px;
     text-align: center;
@@ -95,6 +111,11 @@ body {
     /*responsive*/
     gap: 30px;
     /*espaciado*/
+}
+
+.alimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .postre img {
