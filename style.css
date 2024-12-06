@@ -203,3 +203,37 @@ footer {
     border-bottom-right-radius:4px;
     cursor: pointer;
 }
+
+.desayunos{
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-desayunos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas:
+        "desayuno1 desayuno1 desayuno2 desayuno3"
+        "desayuno1 desayuno1 desayuno4 desayuno5";
+}
+
+.desayuno{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.desayuno img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Asignar áreas de los desayunos */
+.desayuno:nth-child(1) { grid-area: desayuno1; }
+.desayuno:nth-child(2) { grid-area: desayuno2; }
+.desayuno:nth-child(3) { grid-area: desayuno3; }
+.desayuno:nth-child(4) { grid-area: desayuno4; }
+.desayuno:nth-child(5) { grid-area: desayuno5; }
